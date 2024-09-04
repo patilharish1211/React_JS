@@ -4,9 +4,9 @@ import "./Post.css";
 const Post = ({ id, title, body }) => {
   return (
     <div className="post">
-      <span> ID : {id}</span>
-      <h1>{title}</h1>
-      <h3>{body}</h3>
+      <span style={{marginLeft: '50%', fontSize: '22px'}}> ID : {id}</span>
+      <h2 style={{textAlign: 'center'}}>{title}</h2>
+      <h4 style={{textAlign: 'center', fontWeight: '300'}}>{body}</h4>
     </div>
   );
 };

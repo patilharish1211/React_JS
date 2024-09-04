@@ -49,8 +49,8 @@ const Login = () => {
       </div>
       <div className='d-flex align-items-center justify-content-center p-5' style={{ borderBottom: "2px solid #f0f0f0" }}>
         <div className='login col-5 p-5 pt-4 p  b-4'>
-          <h3 className='mb-1'>Welcome Back !</h3>
-          <h3 className='mb-5'>Please Sign in now</h3>
+          <h3 className='mb-1' style={{textAlign: 'center'}}>Welcome Back !</h3>
+          <h3 className='mb-5' style={{textAlign: 'center'}}>Please Sign in now</h3>
           <form onSubmit={(e) => handleSubmit(e)} className='login-form d-flex flex-column' action="">
             <input onChange={(e) => setEmail(e.target.value)} className='p-2 ps-3 mb-3' type="text" placeholder='Email' />
             <input onChange={(e) => setPassword(e.target.value)} className='p-2 ps-3 mb-3' type="text" placeholder='Password' />
@@ -59,7 +59,7 @@ const Login = () => {
           </form>
           <button onClick={handleLogout} className='logout-btn p-3 pb-2 mb-3'>LOG OUT</button>
           <hr />
-          <GoogleButton onClick={handleLogin}/>
+          <GoogleButton onClick={handleLogin} style={{marginLeft: '100px'}}/>
         </div>
       </div>
 
