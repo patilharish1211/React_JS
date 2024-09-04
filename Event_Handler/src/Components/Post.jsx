@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./Post.css";
 
-const Post = ({title, body}) => {
+const Post = ({ id, title, body }) => {
   return (
-    <div className='text-center p-3 col-12  d-flex align-items-center justify-content-center flex-column' >
-      <div className='col-7 border text-center p-3 border-info text-light border-4'>
-      <h3>{title}</h3>
-      <p className='col-12'>{body}</p>
-      </div>
+    <div className="post">
+      <span> ID : {id}</span>
+      <h1>{title}</h1>
+      <h3>{body}</h3>
     </div>
-  )
-}
+  );
+};
 
-export default Post
+export default Post;
